@@ -230,7 +230,7 @@ function App() {
             }
         </div>
     );
-}`}],zA=()=>{const e=cT();let t=0;return e.slug&&(t=parseInt(e.slug)),te(GA,{children:Qt(YA,{children:[te(VA,{to:"/",children:"\u2190 voltar"}),te(HA,{children:Xa[t].conceito}),te($A,{children:Xa[t].instrucoes}),te(BA,{children:Xa[t].code})]})})},qA=()=>te("div",{children:te(zA,{})}),WA=He.main`
+}`}],zA=({item:e})=>te(GA,{children:Qt(YA,{children:[te(VA,{to:"/",children:"\u2190 voltar"}),te(HA,{children:Xa[e].conceito}),te($A,{children:Xa[e].instrucoes}),te(BA,{children:Xa[e].code})]})}),qA=()=>{const e=cT();let t=0;return e.slug&&(t=parseInt(e.slug)),te("div",{children:te(zA,{item:t})})},WA=He.main`
     background-color: #0d1117;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 30px;
